@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,600&family=Outfit:wght@500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#ff5f6d, #ffc371);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.clock {
+  width: 30rem;
+  height: 6rem;
+  position: absolute;
+  /* backdrop-filter: blur(10px); */
+}
+
+#timer {
+  background: linear-gradient(
+    rgba(221, 55, 55, 0.329),
+    rgba(150, 42, 212, 0.418)
+  );
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  backdrop-filter: blur(7px);
+}
+
+#timer span {
+  font-size: 2.5rem;
+}
+
+.clock::before {
+  content: "";
+  width: 90px;
+  height: 90px;
+  background:linear-gradient(#bd37d8 , #0a61c5);
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  border-radius: 10px;
+}
+
+.clock::after {
+    content: "";
+    width: 100px;
+    height: 100px;
+    background:linear-gradient(#dc876583 , #1380869c);
+    position: absolute;
+    bottom: -40px;
+    right: -40px;
+    border-radius:50%;
+  }
+  
